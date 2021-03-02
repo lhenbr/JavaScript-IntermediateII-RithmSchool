@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>List with Ratings</h1>
+    <form id="row-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <label for="rating"> Rate</label>
+        <input type="number" id="rating" name="rating" value="" max="10" min="0">
+        <input type="submit">
+    </form>
+    <div id="filters">
+        <button type="button" id="buttonA-Z">Title A->Z</button>
+        <button type="button" id="buttonZ-A">Title Z->A</button>
+        <button type="button" id="button10-0">Rating 10->0</button>
+        <button type="button" id="button0-10">Rating 0->10</button>
+    </div>
+    <table id="list">
+        <tr>
+            <th>Name</th>
+            <th> Rating</th>
+            <th>Delete</th>
+        </tr>
+    </table>
+
+    <script src=" https://code.jquery.com/jquery-3.1.1.js"
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous">
+        </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
